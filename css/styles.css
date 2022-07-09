@@ -1,0 +1,258 @@
+:root {
+--primary-font: 'Roboto', sans-serif;
+--secondary-font:'Raleway', sans-serif;
+--headlines-color: #212121;
+--primary-text-color: #757575;
+
+}
+
+.list {
+    list-style: none;
+
+}
+
+.link  {
+    text-decoration: none;
+}
+
+body { 
+    font-family: var(--primary-font);
+}
+
+/*=========================HEADER===================*/
+.logo {
+    font-family: var(--secondary-font);
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+color: #000000;
+}
+
+.acsent-logo {
+    font-family:var(--secondary-font);
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #2196F3;
+}
+
+.menu-link a {
+    text-decoration: none;
+        font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--headlines-color);}
+    
+.menu-link .menu-li a:hover,
+.menu-link .menu-li a:focus {
+    color: #2196F3;
+}
+
+.contacts a {
+    text-decoration: none;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
+}
+
+.contacts a:hover,
+.contacts a:focus {
+    color: #2196F3;
+}
+
+/*=========================HEADER=====================*/
+
+/* ========================MAIN Studio===================*/
+.hero {
+    background-color:  #2F303A;
+}
+
+.hero-title{
+font-weight: 900;
+font-size: 44px;
+line-height: 1,36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.hero-button {
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.875;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+background-color: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus{
+    background-color: #188ce8;
+    color: #FFFFFF;}
+.work-process-title {
+    visibility: hidden;
+}
+ .work-process-list h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+ }
+
+ .work-process-list p {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
+ }
+ 
+
+.whatwedo-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--headlines-color);
+    
+}
+
+.our-team {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--headlines-color);
+}
+
+.team-list h3 {
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--headlines-color);
+}
+
+.team-list p {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.1875;
+text-align: center;
+letter-spacing: 0.03em;
+
+color:var(--primary-text-color);
+}
+
+
+
+/*==========================/MAIN STUDIO=====================*/
+/*<============================MAIN PORTFOLIO=================*/
+
+.project-button button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    color: var(--headlines-color);
+    cursor: pointer;
+
+}
+
+.all-button button:hover,
+.all-button button:focus {
+color:#FFFFFF ;
+background-color: #2196F3;}
+
+.title-products {
+    visibility: hidden;
+}
+
+.products-list p {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.875;
+letter-spacing: 0.03em;
+
+color: var(--primary-text-color);
+}
+
+.products-list h3 {
+    font-family: 'Roboto';
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+
+color: var(--headlines-color);
+}
+
+/*<=============================MAIN PORTFOLIO==================*/
+
+
+/*==============================Footer========================*/
+
+.page-footer {
+    background-color: #2F303A;
+}
+
+.logo-footer {
+    font-family: var(--secondary-font);
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.acsent-logo-footer {
+    font-family: var(--secondary-font);
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #2196F3;
+}
+
+ .footer-contacts .geo {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.footer-contacts a {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+/*==============================Footer========================*/
