@@ -3,6 +3,18 @@
 --secondary-font:'Raleway', sans-serif;
 --headlines-color: #212121;
 --primary-text-color: #757575;
+--hover-background-color: #2196F3;
+--hover-text-color: #2196F3;
+--acsent-logo-color: #2196F3;
+--primary-logo-color: #000000;
+--hero-background-color: #2F303A;
+--text-logo-footer: #ffffff;
+
+
+
+
+
+
 
 }
 
@@ -17,6 +29,7 @@
 
 body { 
     font-family: var(--primary-font);
+    font-weight: 400;
 }
 
 /*=========================HEADER===================*/
@@ -24,38 +37,35 @@ body {
     font-family: var(--secondary-font);
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.19;
 letter-spacing: 0.03em;
-color: #000000;
+color:var(--primary-logo-color);
 }
 
 .acsent-logo {
-    font-family:var(--secondary-font);
+    font-family: var(--secondary-font);
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #2196F3;
+color: var(--acsent-logo-color);
 }
 
-.menu-link a {
+.menu-link {
     text-decoration: none;
-        font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--headlines-color);}
     
-.menu-link .menu-li a:hover,
-.menu-link .menu-li a:focus {
-    color: #2196F3;
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--hover-text-color);
 }
 
-.contacts a {
-    text-decoration: none;
+.email {
 font-family: var(--primary-font);
-    font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -63,22 +73,35 @@ letter-spacing: 0.02em;
 color: var(--primary-text-color);
 }
 
-.contacts a:hover,
-.contacts a:focus {
-    color: #2196F3;
+.phone-number {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
 }
+
+.email:hover,
+.email:focus {
+    color: var(--hover-text-color);
+}
+ .phone-number:hover,
+ .phone-number:focus {
+    color: var(--hover-text-color); 
+ }
 
 /*=========================HEADER=====================*/
 
 /* ========================MAIN Studio===================*/
 .hero {
-    background-color:  #2F303A;
+    background-color:  var(--hero-background-color);
 }
 
 .hero-title{
 font-weight: 900;
 font-size: 44px;
-line-height: 1,36;
+line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
@@ -86,7 +109,6 @@ color: #FFFFFF;
 }
 
 .hero-button {
-font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.875;
@@ -118,7 +140,6 @@ cursor: pointer;
  }
 
  .work-process-list p {
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -170,8 +191,8 @@ color:var(--primary-text-color);
 /*==========================/MAIN STUDIO=====================*/
 /*<============================MAIN PORTFOLIO=================*/
 
-.project-button button {
-    font-family: 'Roboto', sans-serif;
+.products-button {
+    font-family: var(--primary-font)
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
@@ -181,8 +202,8 @@ color:var(--primary-text-color);
 
 }
 
-.all-button button:hover,
-.all-button button:focus {
+.products-button:hover,
+.products-button:focus {
 color:#FFFFFF ;
 background-color: #2196F3;}
 
@@ -190,8 +211,7 @@ background-color: #2196F3;}
     visibility: hidden;
 }
 
-.products-list p {
-font-weight: 400;
+.products-text {
 font-size: 16px;
 line-height: 1.875;
 letter-spacing: 0.03em;
@@ -199,13 +219,11 @@ letter-spacing: 0.03em;
 color: var(--primary-text-color);
 }
 
-.products-list h3 {
-    font-family: 'Roboto';
+.products-title {
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-
 color: var(--headlines-color);
 }
 
@@ -220,12 +238,11 @@ color: var(--headlines-color);
 
 .logo-footer {
     font-family: var(--secondary-font);
-font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--text-logo-footer);
 }
 
 .acsent-logo-footer {
@@ -234,7 +251,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #2196F3;
+color: var(--acsent-logo-color);
 }
 
  .footer-contacts .geo {
@@ -245,12 +262,34 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 }
 
-.footer-contacts a {
-font-weight: 400;
+.email-footer {
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+}
+
+.phone-number-footer {
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);  
+}
+
+.geo:hover,
+.geo:focus{
+    color: var(--hover-text-color);
+}
+
+.email-footer:hover,
+.email-footer:focus {
+    color: var(--hover-text-color);
+}
+
+
+.phone-number-footer:hover,
+.phone-number-footer:focus {
+    color: var(--hover-text-color);
 }
 
 
